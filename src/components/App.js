@@ -59,7 +59,12 @@ const App = () => {
   const renderChoice = () => {
     if (renderBall) {
       return <div className="ball" style={ballPosition}></div>;
-    } else return <button onClick={start}>Start</button>;
+    } else
+      return (
+        <button onClick={start} className="start">
+          Start
+        </button>
+      );
   };
 
   return (
