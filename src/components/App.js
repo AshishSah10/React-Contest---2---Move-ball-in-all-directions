@@ -42,7 +42,7 @@ const App = () => {
     setBallPosition(ballPositionCopy);
   };
   React.useEffect(() => {
-    document.addEventListener("keydown", keyPressHandler);
+    document.addEventListener("keydown", keyPressHandler); // what if callback function is a arrowFunction
     return () => {
       document.removeEventListener("keydown", keyPressHandler);
     };
